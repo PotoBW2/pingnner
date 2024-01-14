@@ -15,6 +15,7 @@ def check_internet(host="8.8.8.8", port=53, timeout=3):
 toaster = ToastNotifier()
 prev_status = False
 
+system('mode con: cols=125 lines=14')
 
 while True:
     internet_status = check_internet()
